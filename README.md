@@ -1,6 +1,6 @@
 * fc目录为filecheck，需要先建立索引再设置crontab定期扫描。
     * 下载对应脚本
-        * `curl https://github.com/xiaozhenkai/filecheck/raw/master/fc/fc.py > fc.py`
+        * `curl https://github.com/xiaozhenkai/filecheck/blob/master/fc/fc.py > fc.py`
     * 先整理出需要加入监控的文件列表,例子里的默认目录是home/wwwroot/web/，以Discuz论坛为例
         * `cd /home/wwwroot/web/ ; find . -name '*.php' | egrep -v 'log|data/template|cache_study_keyword|cache'  | tee ~/php.list`
     * 生成md5索引
